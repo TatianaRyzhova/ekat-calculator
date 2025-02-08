@@ -125,7 +125,7 @@ function App() {
               {submitted && (
                   <div className="result">
                   Результат:
-                  <span className={result <= 50 ? 'result-green' : 'result-red'}> {result}</span>
+                  <span className={result >= 50 ? 'result-red' : 'result-green'}> {result}</span>
                   <p className="information">{'Р > 50% - высокий риск выявления НБ плода'}</p>
                   <p className="information">{'Р < 50% - низкий риск НБ плода '}</p>
               </div>
